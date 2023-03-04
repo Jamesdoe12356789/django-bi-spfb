@@ -12,4 +12,5 @@ def index(request):
         info = clientinfo.objects.create(email = email, phone = phone, pwd = pwd, Confirmpwd = Confirmpwd, message = message)
         info.save()
     return render(request, 'SPapp/index.html')
+
     
