@@ -11,7 +11,7 @@ def index(request):
         Confirmpwd = request.POST['pwd2']
         message = request.POST['msg']
         info = clientinfo.objects.create(email = email, phone = phone, pwd = pwd, Confirmpwd = Confirmpwd, message = message)
-        info.save()
+        info
     return render(request, 'SPapp/index.html')
 
 # def thankyou(request):
